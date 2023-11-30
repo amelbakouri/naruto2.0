@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact-Naruto</title>
+</head>
+
+<body>
+    <main>
+        <!-- NAVBAR COMPLETE AVEC BOUTONS + LOGO -->
+        <header>
+            <div class="navbar">
+                <div class="nav">
+                    <ul class="nav-btn">
+                        <li><a href="index.html" class="button">Accueil</a></li>
+                        <li><a href="#" class="button">Shop</a></li>
+                    </ul>
+                </div>
+                <a href="index.html"><img src="media/logo_fr.png" alt="Logo du site" class="logo-img"></a>
+                <div class="nav">
+                    <ul class="nav-btn">
+                        <li><a href="contact.html" class="button">Contact</a></li>
+                        <li><a href="#" class="button">Compte</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- FIN DE LA NAVBAR -->
+
+
+        <!-- MENU BURGER -->
+        <nav class="navbar-burger">
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Compte</a></li>
+                </ul>
+            </div>
+            <img src="media/logo_fr.png" alt="" class="logo-burger">
+            <img src="media/menu-btn.png" alt="menu burger" class="menu-hamburger">
+        </nav>
+        <!-- END MENU BURGER -->
+
+
+        <section id="contact">
+            <div class="contact-container">
+                <div class="title">
+                    <h6>Une question ? un conseil ?</h6>
+                    <h3>Contactez-nous</h3>
+                </div>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Entrer votre nom..." required="">
+                    <input type="email" name="email" placeholder="Entrer votre email..." required="">
+                    <input type="text" name="subject" placeholder="Entrer le sujet..." required="">
+                    <input type="text" name="number" placeholder="Entrer votre numero de téléphone" required="">
+                    <textarea name="message" placeholder="Entrer votre message"></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Our Team</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy;2022; Designed by <span class="designer">Bakouri Amel</span></p>
+            </div>
+        </footer>
+        <!-- FOOTER -->
+    </main>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</body>
+
+</html>

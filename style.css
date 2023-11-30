@@ -1,0 +1,700 @@
+* {
+    margin: 0;
+    padding: 0;
+    block-size: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-image: url('media/bg_comics_en.png');
+}
+
+
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btn {
+    display: flex;
+}
+
+.button {
+    padding: 11px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+.button:hover {
+    background-color: #FB9425;
+}
+
+
+.nav-btn li {
+    width: 10vh;
+    margin-right: 20px;
+}
+
+.logo-img {
+    width: 18vh;
+    height: 13vh;
+}
+
+/* FIN DE LA NAVBAR */
+
+
+
+
+/* MENU BURGER */
+
+.navbar-burger {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-links {
+    display: none;
+}
+
+.navbar-burger a {
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+.navbar-burger .menu-hamburger {
+    display: none;
+    right: 16px;
+    top: 20px;
+    width: 35px;
+}
+
+.logo-burger {
+    display: none;
+    width: 90px;
+}
+
+
+/* FIN MENU BURGER */
+
+
+
+
+
+/* boutons titre + dague naruto */
+
+.all-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-items {
+    width: 32rem;
+    height: 68px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid #2a2a2a;
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+.btn-items:hover {
+    background-color: #FB9425;
+}
+
+.icon-fleche {
+    width: 60px;
+}
+/* END boutons titre + dague naruto */
+
+
+
+
+
+/* ACTUALITÉS IMG TXT */
+
+/* img + txt du slider */
+.img-actu {
+    width: 71vh;
+    border-radius: 1rem;
+}
+
+.text-actu {
+    width: 72vh;
+    color: #2a2a2a;
+    font-size: large;
+    margin-top: 3px;
+}
+
+
+
+/* SLIDER */
+.container {
+    padding: 3rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 53rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 1.5rem;
+    -ms-overflow-style: none;
+    /* Hide scrollbar IE and Edge */
+    scrollbar-width: none;
+    /* Hide scrollbar Firefox */
+}
+
+.actu-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider .actu-container {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    background-color: #f5f5f5e8;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color: #6e6e6e;
+    opacity: 0.55;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+/* FIN DE LA SECTION ACTUALITÉS */
+
+
+
+
+
+/* SECTION HISTOIRE */
+
+.histoire {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.all-h {
+    position: relative;
+    width: 32rem;
+    margin: 6%;
+    padding-top: 3%;
+}
+
+.history-card {
+    width: 32rem;
+    height: 20rem;
+    background-color: white;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+.history-items {
+    margin-left: 50px;
+}
+
+.history-card h2 {
+    margin-bottom: 5px;
+    font-size: 38px;
+}
+
+.history-card h3 {
+    width: 18rem;
+    margin-bottom: 28px;
+    font-size: 19px;
+}    
+
+/* personnages actualités */
+.naruto-perso {
+    width: 20rem;
+}
+
+.img-naruto {
+    position: absolute;
+    top: 36%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.boruto-perso {
+    width: 26rem;
+    
+}
+
+.img-boruto {
+    position: absolute;
+    top: 47%;
+    right: -8px;
+    transform: translate(50%, -50%);
+}
+
+/* plus d'infos -> */
+.info-plus {
+    position: absolute;
+    width: 12rem;
+    height: 45px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #2a2a2a;
+}
+
+.info-plus:hover {
+    background-color: #FB9425;
+}
+
+.icon-fleche-3 {
+    width: 50px;
+}
+
+/* FIN DE LA SECTION HISTOIRE */
+
+
+
+
+
+/* PAGE CONTACT*/
+
+section#contact {
+    padding-bottom: 100px;
+}
+
+section#contact .contact-container {
+    max-width: 800px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 60px 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: rgb(214, 214, 214) 0px 10px 50px -10px
+}
+
+section#contact .contact-container .title {
+    text-align: center;
+    color: #2a2a2a;
+    margin-bottom: 60px;
+}
+
+section#contact .contact-container .title h3 {
+    font-size: 2.3em;
+}
+
+section#contact .contact-container .title h6 {
+    font-size: 1.2em;
+}
+
+section#contact .contact-container form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 600px;
+}
+
+section#contact .contact-container form input {
+    width: 45%;
+}
+
+section#contact .contact-container form input:hover,
+section#contact .contact-container form textarea:hover {
+    border-bottom: 2px solid #FB9425;
+}
+
+section#contact .contact-container form textarea {
+    width: 95%;
+    resize: none;
+    height: 100px;
+}
+
+section#contact .contact-container form input,
+section#contact .contact-container form textarea {
+    margin: 15px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #e4e4ec;
+    transition: 0.2s;
+}
+
+section#contact .contact-container form button {
+    width: 192px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    background-color: #FB9425;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    margin: 0 auto;
+    transition: 0.2s;
+    margin-top: 20px;
+}
+
+section#contact .contact-container form button:hover {
+    transform: translateY(-5px);
+    box-shadow: rgb(214, 214, 214) 0px 10px 40px 0px
+}
+
+/* FIN DE LA PAGE CONTACT */
+
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #111;
+}    
+
+.footerContainer {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}    
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}    
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}    
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}    
+
+/* effet hover sur social media */
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}    
+
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}    
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+/* FIN DU FOOTER */
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+    /* menu burger */
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar-burger .menu-hamburger {
+        display: block;
+        position: absolute;
+        z-index: 999;
+    }
+
+    .logo-burger {
+        top: 11px;
+        left: 6px;
+        position: absolute;
+        display: block;
+    }
+
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: fixed;
+        /* Utilisez 'fixed' pour que l'overlay reste en place lors du défilement */
+        background-color: rgba(255, 255, 255, 0.49);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+        z-index: 998;
+        /* Valeur élevée pour placer au-dessus des autres éléments */
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .navbar-burger .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+    /* END menu burger */
+    
+    
+    /* Actualité */
+    
+    .m-top {
+        padding-top: 14%;
+    }
+    
+    .img-actu {
+        width: 27vh;
+        border-radius: 1rem;
+    }
+    
+    .text-actu {
+        width: 27vh;
+        font-size: 10px;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+    .container {
+        margin-top: 40px;
+        padding: 0;
+    }
+
+    .slider-wrapper {
+        max-width: 23rem;
+        height: 24vh;
+        margin: 0 auto;
+    }
+
+    .slider-nav a {
+        width: 0.4rem;
+        height: 0.4rem;
+    }
+
+
+    /* END Actualité */
+
+
+    /* espace HISTOIRE */
+
+    .btn-items {
+        width: 15rem;
+        height: 57px;
+        margin-top: 13%;
+        font-size: 14px;
+    }
+    
+    .histoire {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .all-h {
+        width: 25rem;
+        margin: 0;
+        padding-top: 3%;
+    }
+
+    .history-card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .history-card {
+        width: 20rem;
+        height: 11rem;
+    }
+    
+    .history-items {
+        margin-left: 28px;
+    }
+    
+    .history-card h2 {
+        margin-bottom: 1px;
+        font-size: 25px;
+    }
+    
+    .history-card h3 {
+        width: 15rem;
+        margin-bottom: 17px;
+        font-size: 12px;
+    }
+    
+    .naruto-perso {
+        width: 8rem;
+    }
+    
+    .img-naruto {
+        top: 48%;
+        right: 63px;
+        transform: translate(50%, -50%);
+    }
+    
+    .boruto-perso {
+        width: 11rem;
+    }
+
+    .img-boruto {
+        top: 49%;
+        right: 20%;
+        transform: translate(50%, -50%);
+    }
+
+
+    .icon-fleche-3 {
+        width: 40px;
+    }
+
+    .info-plus {
+        width: 8rem;
+        height: 38px;
+        font-size: 11px;
+    }
+
+    /* FIN espace HISTOIRE */
+
+    /* PAGE CONTACT */
+
+    section#contact {
+        padding: 114px 15px;
+    }
+
+    section#contact .contact-container form {
+        flex-direction: column;
+        width: 95%;
+        min-width: 0px;
+    }
+
+    section#contact .contact-container form input {
+        width: 100%;
+    }
+
+    section#contact .contact-container .title h6 {
+        font-size: 1em;
+    }
+
+    section#contact .contact-container .title h3 {
+        font-size: 2em;
+    }
+
+
+    /* FIN PAGE CONTACT */
+
+    /* FOOTER */
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* FIN FOOTER */
+}
