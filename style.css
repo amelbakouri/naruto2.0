@@ -483,7 +483,7 @@ footer {
 
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 576px){
 
     /* menu burger */
 
@@ -564,8 +564,7 @@ footer {
     }
 
     .slider-wrapper {
-        max-width: 23rem;
-        height: 24vh;
+        max-width: 92%;
         margin: 0 auto;
     }
 
@@ -593,9 +592,9 @@ footer {
     }
 
     .all-h {
-        width: 25rem;
+        width:  100%;
         margin: 0;
-        padding-top: 3%;
+        padding-top: 12%;
     }
 
     .history-card-container {
@@ -607,6 +606,7 @@ footer {
     .history-card {
         width: 20rem;
         height: 11rem;
+        margin-bottom: 0px;
     }
     
     .history-items {
@@ -625,26 +625,28 @@ footer {
     }
     
     .naruto-perso {
-        width: 8rem;
+        width: 5rem;
     }
     
     .img-naruto {
-        top: 48%;
-        right: 63px;
+        top: 60%;
+        right: 74px;
         transform: translate(50%, -50%);
     }
     
     .boruto-perso {
-        width: 11rem;
+        width: 7rem;
     }
 
     .img-boruto {
-        top: 49%;
+        top: 65%;
         right: 20%;
         transform: translate(50%, -50%);
     }
 
-
+    .p-b{
+        padding-bottom: 12%;
+    }
     .icon-fleche-3 {
         width: 40px;
     }
@@ -695,6 +697,8 @@ footer {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
+
 
     /* FIN FOOTER */
 }
