@@ -117,6 +117,7 @@ body {
 .icon-fleche {
     width: 60px;
 }
+
 /* END boutons titre + dague naruto */
 
 
@@ -249,7 +250,7 @@ body {
     width: 18rem;
     margin-bottom: 28px;
     font-size: 19px;
-}    
+}
 
 /* personnages actualités */
 .naruto-perso {
@@ -265,7 +266,7 @@ body {
 
 .boruto-perso {
     width: 26rem;
-    
+
 }
 
 .img-boruto {
@@ -398,18 +399,18 @@ section#contact .contact-container form button:hover {
 
 footer {
     background-color: #111;
-}    
+}
 
 .footerContainer {
     width: 100%;
     padding-top: 70px;
     padding-bottom: 20px;
-}    
+}
 
 .socialIcons {
     display: flex;
     justify-content: center;
-}    
+}
 
 .socialIcons a {
     text-decoration: none;
@@ -417,24 +418,24 @@ footer {
     background-color: white;
     margin: 10px;
     border-radius: 50%;
-}    
+}
 
 .socialIcons a i {
     font-size: 2em;
     color: black;
     opacity: 0.9;
-}    
+}
 
 /* effet hover sur social media */
 .socialIcons a:hover {
     background-color: #111;
     transition: 0.5s;
-}    
+}
 
 .socialIcons a:hover i {
     color: white;
     transition: 0.5s;
-}    
+}
 
 .footerNav {
     margin: 30px 0;
@@ -483,7 +484,7 @@ footer {
 
 
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
 
     /* menu burger */
 
@@ -537,20 +538,21 @@ footer {
     .nav-links.mobile-menu {
         margin-left: 0;
     }
+
     /* END menu burger */
-    
-    
+
+
     /* Actualité */
-    
+
     .m-top {
         padding-top: 14%;
     }
-    
+
     .img-actu {
         width: 27vh;
         border-radius: 1rem;
     }
-    
+
     .text-actu {
         width: 27vh;
         font-size: 9px;
@@ -558,6 +560,7 @@ footer {
         margin-top: 0px;
         margin-bottom: 15px;
     }
+
     .container {
         padding: 0;
     }
@@ -585,14 +588,14 @@ footer {
         margin-bottom: 10%;
         font-size: 14px;
     }
-    
+
     .histoire {
         display: flex;
         flex-direction: column;
     }
 
     .all-h {
-        width:  100%;
+        width: 100%;
         margin: 0;
         padding-bottom: 12%;
     }
@@ -602,38 +605,38 @@ footer {
         flex-direction: column;
         align-items: center;
     }
- 
+
     .history-card {
         width: 85%;
         height: 11rem;
         margin-bottom: 0px;
     }
-    
+
     .history-items {
         margin-left: 28px;
     }
-    
+
     .history-card h2 {
         margin-bottom: 1px;
         font-size: 25px;
     }
-    
+
     .history-card h3 {
         width: 15rem;
         margin-bottom: 17px;
         font-size: 12px;
     }
-    
+
     .naruto-perso {
         width: 5rem;
     }
-    
+
     .img-naruto {
         top: 60%;
         right: 74px;
         transform: translate(50%, -50%);
     }
-    
+
     .boruto-perso {
         width: 7rem;
     }
@@ -702,7 +705,7 @@ footer {
     /* FIN FOOTER */
 }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 350px) {
     .naruto-perso {
         width: 4rem;
     }
