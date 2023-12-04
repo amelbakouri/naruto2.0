@@ -553,13 +553,12 @@ footer {
     
     .text-actu {
         width: 27vh;
-        font-size: 10px;
+        font-size: 9px;
         font-weight: bold;
         margin-top: 0px;
         margin-bottom: 15px;
     }
     .container {
-        margin-top: 40px;
         padding: 0;
     }
 
@@ -583,6 +582,7 @@ footer {
         width: 15rem;
         height: 57px;
         margin-top: 13%;
+        margin-bottom: 10%;
         font-size: 14px;
     }
     
@@ -594,7 +594,7 @@ footer {
     .all-h {
         width:  100%;
         margin: 0;
-        padding-top: 12%;
+        padding-bottom: 12%;
     }
 
     .history-card-container {
@@ -604,7 +604,7 @@ footer {
     }
  
     .history-card {
-        width: 20rem;
+        width: 85%;
         height: 11rem;
         margin-bottom: 0px;
     }
@@ -644,9 +644,6 @@ footer {
         transform: translate(50%, -50%);
     }
 
-    .p-b{
-        padding-bottom: 12%;
-    }
     .icon-fleche-3 {
         width: 40px;
     }
@@ -698,7 +695,36 @@ footer {
         margin-bottom: 10px;
     }
 
-
+    .socialIcons a {
+        padding: 7px;
+    }
 
     /* FIN FOOTER */
+}
+
+@media screen and (max-width: 350px){
+    .naruto-perso {
+        width: 4rem;
+    }
+
+    .img-naruto {
+        top: 67%;
+        right: 50px;
+    }
+
+    .boruto-perso {
+        width: 6rem;
+    }
+
+    .img-boruto {
+        top: 69%;
+    }
+
+    .text-actu {
+        width: 27vh;
+        font-size: 8px;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
 }
