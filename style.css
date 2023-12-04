@@ -39,7 +39,6 @@ body {
 
 
 .nav-btn li {
-    width: 10vh;
     margin-right: 20px;
 }
 
@@ -136,12 +135,14 @@ body {
     width: 72vh;
     color: #2a2a2a;
     font-size: large;
+    font-weight: bold;
     margin-top: 3px;
 }
 
 
 
 /* SLIDER */
+
 .container {
     padding: 3rem;
 }
@@ -254,25 +255,25 @@ body {
 
 /* personnages actualités */
 .naruto-perso {
-    width: 20rem;
+    width: 17rem;
 }
 
 .img-naruto {
     position: absolute;
-    top: 36%;
-    right: 0;
+    top: 43%;
+    right: 16px;
     transform: translate(50%, -50%);
 }
 
 .boruto-perso {
-    width: 26rem;
+    width: 22rem;
 
 }
 
 .img-boruto {
     position: absolute;
     top: 47%;
-    right: -8px;
+    right: 26px;
     transform: translate(50%, -50%);
 }
 
@@ -481,9 +482,6 @@ footer {
 /* FIN DU FOOTER */
 
 
-
-
-
 @media screen and (max-width: 576px) {
 
     /* menu burger */
@@ -543,20 +541,22 @@ footer {
 
 
     /* Actualité */
+    .slide-w {
+        margin-bottom: 20px;
+    }
 
     .m-top {
         padding-top: 14%;
     }
 
     .img-actu {
-        width: 27vh;
+        width: 57vw;
         border-radius: 1rem;
     }
 
     .text-actu {
-        width: 27vh;
-        font-size: 9px;
-        font-weight: bold;
+        width: 57vw;
+        font-size: 8px;
         margin-top: 0px;
         margin-bottom: 15px;
     }
@@ -723,11 +723,124 @@ footer {
         top: 69%;
     }
 
-    .text-actu {
-        width: 27vh;
-        font-size: 8px;
-        font-weight: bold;
-        margin-top: 0px;
-        margin-bottom: 15px;
+}
+
+@media screen and (min-width: 576px) and (max-width: 1100px) {
+
+    /* menu burger */
+
+    .navbar {
+        display: none;
     }
+
+    .navbar-burger .menu-hamburger {
+        display: block;
+        position: absolute;
+        z-index: 999;
+    }
+
+    .logo-burger {
+        top: 11px;
+        left: 6px;
+        position: absolute;
+        display: block;
+    }
+
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: fixed;
+        /* Utilisez 'fixed' pour que l'overlay reste en place lors du défilement */
+        background-color: rgba(255, 255, 255, 0.49);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+        z-index: 998;
+        /* Valeur élevée pour placer au-dessus des autres éléments */
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .navbar-burger .nav-links ul li {
+        margin: 25px 0;
+        font-size: 1.2em;
+    }
+
+    .nav-links.mobile-menu {
+        margin-left: 0;
+    }
+
+    /* END menu burger */
+
+    /* actu */
+    .m-top {
+        padding-top: 10%;
+    }
+
+    .btn-items {
+        width: 24rem;
+        height: 61px;
+        margin-top: 4%;
+        margin-bottom: 2%;
+        font-size: 16px;
+    }
+
+    .text-actu {
+        font-size: 15px;
+    }
+
+    /* END menu burger */
+
+    /* Histoire */
+    .histoire {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .naruto-perso {
+        width: 16rem;
+    }
+
+    .all-h {
+        margin: 0;
+    }
+
+    .img-naruto {
+        top: 42%;
+        right: 10%;
+    }
+
+    .boruto-perso {
+        width: 19rem;
+    }
+
+    .img-boruto {
+        top: 57%;
+        right: 13%;
+    }
+
+    /* END histoire */
+
+    /* PAGE CONTACT */
+
+    section#contact .contact-container {
+        max-width: 90%;
+    }
+
+    section#contact {
+        padding: 114px 15px;
+    }
+
+    /* FIN PAGE CONTACT */
 }
