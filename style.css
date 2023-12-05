@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    block-size: border-box;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     list-style: none;
@@ -232,7 +232,7 @@ body {
 
 .history-card {
     width: 32rem;
-    height: 20rem;
+    height: 22rem;
     background-color: white;
     margin-bottom: 50px;
     padding-top: 50px;
@@ -255,13 +255,13 @@ body {
 
 /* personnages actualités */
 .naruto-perso {
-    width: 17rem;
+    width: 16rem;
 }
 
 .img-naruto {
     position: absolute;
-    top: 43%;
-    right: 16px;
+    top: 42%;
+    right: 10%;
     transform: translate(50%, -50%);
 }
 
@@ -273,7 +273,7 @@ body {
 .img-boruto {
     position: absolute;
     top: 47%;
-    right: 26px;
+    right: 19px;
     transform: translate(50%, -50%);
 }
 
@@ -608,7 +608,7 @@ footer {
 
     .history-card {
         width: 85%;
-        height: 11rem;
+        height: 14rem;
         margin-bottom: 0px;
     }
 
@@ -827,7 +827,7 @@ footer {
 
     .img-boruto {
         top: 57%;
-        right: 13%;
+        right: 9%;
     }
 
     /* END histoire */
